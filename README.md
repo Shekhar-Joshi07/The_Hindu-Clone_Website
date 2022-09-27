@@ -1,2 +1,2 @@
-Project Code - splendid-quiver-7090
-Website - The Hindu
+Project Code - splendid-quiver-7090 
+
