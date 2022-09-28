@@ -1,0 +1,79 @@
+#navbar{
+    text-align: center;
+}
+#Navsecline{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 2%;
+    
+}
+#popup{
+    display: none;
+    display: fixed;
+    top: 0px;
+    left: 20%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding: 10px;
+}
+
+#popup div{
+    padding: 10px;
+}
+#opinionpop{
+    display: none;
+    display: fixed;
+    top: 0px;
+    left: 20%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding: 10px;
+}
+
+#opinionpop div{
+    padding: 10px;
+}
+#businesspop{
+    display: none;
+    display: fixed;
+    top: 0px;
+    left: 20%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#businesspop div{
+    padding: 10px;
+}
+
+#sportspop{
+    display: none;
+    display: fixed;
+    top: 0px;
+    left: 20%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#sportspop div{
+    padding: 10px;
+}
+
+
+#trial{
+    background-color: blue; color: white;
+    padding: 5px;border-radius: 5px;
+}
+#subscribe{
+    background-color: rgb(255, 255, 58);
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+#login{
+    color: blue;
+    padding: 5px;
+    border-radius: 5px;
+}
