@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    <style>
+         #sidebar{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        border: 1px solid;
+        position: fixed;
+        margin-top:-50px;
+        color: white;
+        background-color: black;
+        margin-left: 10%;
+        
+       
+       
+       
+      }
+      #top{
+        width: 80%;
+        margin: auto;
+        border: 1px solid;
+        height: 300px;
+        display: flex;
+        gap: 10px;
+        margin-top: 50px;
+      }
+      #top>div:nth-child(1){
+        width: 40%;
+        height: 100%;
+        border: 1px solid;
+      }
+
+      #top>div:nth-child(1)>img{
+        width: 100%;
+        height: 200px;
+        border: 1px solid;
+      }
+      #topl p{
+        margin-top: -10px;
+      
+      }
+      #top>div:nth-child(2){
+        width: 60%;
+        border: 1px solid;
+      }
+      #top>div:nth-child(2) div{
+       /* height: 200px; */
+        border: 1px solid;
+      }
+      #topr{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2%;
+        margin-left: 5px;
+      }
+      .topimg{
+        display: flex;
+      }
+      .topimg img{
+        width: 40%;
+        /* height: 140px; */
+      }
+      .toph3p{
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+       
+      }
+      .toph3p>p{
+       font-size: 13px;
+       margin: -3px 0 0 10px ;
+       width: 89%;
+      }
+      .toph3p>h6{
+        font-size: 15px;
+       margin: 15px 0 0 10px;
+      }
+
+      /* =============================== */
+      #top2,#top3{
+      border: 1px solid;
+      height: 100px;
+      display: flex;
+      width: 80%;
+      margin: auto;
+      margin-top: 20px;
+      gap: 10%;
+      justify-content: space-between;
+      }
+      /* #top3{
+      border: 1px solid;
+      height: 140px;
+      display: flex;
+      width: 80%;
+      margin: auto;
+      margin-top: 20px;
+      } */
+
+
+
+      #slider{
+        height: 300px;
+        border: 1px solid;
+        width: 40%;
+        margin: auto;
+        margin-top:20px        
+      }
+      #slider img{
+        width: 100%;
+        height: 100%;       
+      }
+      #mapnav{
+        width: 70%;
+        margin: auto;
+        display: flex;
+      }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      #h3trend{
+        color:#FE1F1F;
+        margin-left: 10%;
+      }
+      #results{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 2%;
+         height:1100px;
+        border: 1px solid;
+      }
+      #results>div{
+        height:200px;
+        border: 1px solid;
+        /* margin-top: -150px; */
+      }
+      #results>div>img{
+        width: 100%;
+        height: 100px;
+        
+      }
+      #results>div>h3{
+        width: 100%;
+        font-size: 15px;
+       
+        
+      }
+     
+      p:hover{
+        color: blue;
+      }
+   
+      p:hover{
+        text-decoration: underline;
+      }
+      #trend{
+        color:#FE1F1F;
+      }
+      /* ==================================================== */
+      #map{
+        width: 80%;
+        margin: auto;
+        height: 300px;
+        border: 1px solid;
+        margin-top: 20px;
+        
+      }
+      #map>img{
+        width: 100%;
+        height: 240px;
+        margin-top: -20px;
+      }
+      #mapnav>h5:nth-child(1), #mapnav>h5:nth-child(2){
+        width: 50%;
+        border: 1px solid;
+        text-align: center;
+        padding-top: 20px;
+        background-color: #DA4D53;
+        color: white;
+      }
+      #mapnav>h5:nth-child(1):hover, #mapnav>h5:nth-child(2):hover{
+        background-color:#D3232A;
+        text-decoration:underline;
+      }
+      #mapnav{
+        width: 100%;
+        margin: auto;
+        height: 100px;
+        display: flex;
+        margin-top: -20px;
+      }
+/* ======================================================================== */
+.slider2 {
+  width: 80%;
+  height: 200px;
+  display: flex;
+  overflow-x:auto;
+  overflow-y: hidden;
+  border: 1px solid;
+  margin: auto;
+
+  
+ 
+}
+.slide {
+  width: 25%;
+  flex-shrink:0;
+  height: 100%;
+  border: 1px solid;
+  background-color: aqua;
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- Give Navbar with id "navbar"  -->
+    
+    <div id="navbar">
+    
+     
+    </div>
+    <!-- ============================================================= -->
+    <div id="sidebar">
+      <p id="trend">Trending Today</p>
+      <p id="in">India</p>
+      <p id="us">Usa</p>
+      <p id="ch">China</p>
+      <p id="uk">UK</p>
+      <p id="nz">New Zealand</p>
+    </div>
+    <!-- =========================================================================== -->
+
+    <div id="top">
+      <div id="topl">
+        <img src="https://th-i.thgim.com/public/todays-paper/nn9irl/article65272587.ece/alternates/LANDSCAPE_660/vbk-stock-ministry%20of%20home%20affairs-%20home%20ministry-mha" alt="">
+        <h3>PFI, eight front organisations including Campus Front of India banned for five years</h3>
+        <p>VIJAITA SINGH</p>
+      </div>
+      <div id="topr">
+        <div class="topimg">
+          <img src="https://th-i.thgim.com/public/incoming/bd8300/article65943635.ece/alternates/SQUARE_115/PTI09_27_2022_000051B.jpg" alt="">
+          <div class="toph3p">
+          <h6>CONGRESS PRESIDENTIAL ELECTION | INDIA</h6>
+          <p>Three Ashok Gehlot Loyalists get notice; no clarity on Congress president poll</p>
+            </div>
+        </div>
+        <div class="topimg">
+          <img src="https://th-i.thgim.com/public/incoming/jidukx/article65944752.ece/alternates/SQUARE_115/2022-09-27T183330Z_84178340_RC2RJV9S1G6M_RTRMADP_3_SAUDI-POLITICS.JPG" alt="">
+          <div class="toph3p">
+          <h6>WORLD</h6>
+          <p>Saudi King names Crown Prince MbS as Prime Minister</p>
+            </div>
+        </div>
+        <div class="topimg">
+          <img src="https://th-i.thgim.com/public/incoming/ix1szd/article65941332.ece/alternates/SQUARE_115/PTI09_24_2022_000146B.jpg" alt="">
+          <div class="toph3p">
+          <h6>PFI RAIDS | INDIA</h6>
+          <p>Over 170 PFI activists detained across India
+            </p>
+            </div>
+        </div>
+        <div class="topimg">
+          <img src="https://th-i.thgim.com/public/incoming/gyoe97/article65943662.ece/alternates/SQUARE_115/DSC_8765.jpg" alt="">
+          <div class="toph3p">
+          <h6>DELHI </h6>
+          <p> CBI arrests Vijay Nair in Delhi Excise Policy case
+            </p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- ============================================================================= -->
+      <div id="top2">
+        <div class="topimg">
+          <img src="https://th-i.thgim.com/public/incoming/f5lzzk/article65945217.ece/alternates/SQUARE_115/IMG_TH11-Bindu-India%E2%80%99s_u_2_1_O2A8UC5D.jpg" alt="">
+          <div class="toph3p">
+          <h6>OPINION | COMMENT</h6>
+          <p>
+            India must fine-tune its strategy to eliminate TB</p>
+            </div>
+        </div>
+        <div class="topimg">
+          <img src="https://th-i.thgim.com/public/incoming/qu0bit/article65946155.ece/alternates/SQUARE_115/2022-09-28T093208Z_96056652_RC2OPV9U7R7G_RTRMADP_3_BRITAIN-BONDS.JPG" alt="">
+          <div class="toph3p">
+          <h6>ECONOMY</h6>
+          <p>Bank of England to buy U.K. government bonds to stabilise financial markets
+            1 hr</p>
+            </div>
+        </div>
+      </div>
+   <!-- ================================================================================= -->
+    <div id="slider"></div>
+    
+    <!-- ================================================================================================== -->
+    <div id="top3">
+      <div class="topimg">
+        <img src="https://th-i.thgim.com/public/business/Industry/7hps0i/article38271943.ece/alternates/SQUARE_115/CentralElectronicsLimitedjpg" alt="">
+        <div class="toph3p">
+        <h6>INDUSTRY</h6>
+        <p>Govt terminates sale of CEL to Nandal Finance</p>
+          </div>
+      </div>
+      <div class="topimg">
+        <img src="https://th-i.thgim.com/public/incoming/h420nm/article65943556.ece/alternates/SQUARE_115/IMG_thvli-supreme-court-_4_1_7IA6L7U0.jpg" alt="">
+        <div class="toph3p">
+        <h6>INDIA</h6>
+        <p>SC Constitution Bench to examine on November 15 if greater restrictions can be imposed on freedom of speech of Ministers</p>
+          </div>
+      </div>
+    </div>
+    <hr>
+    <!-- ===================================================== -->
+    <h3 id="h3trend"></h3>
+    <hr>
+    <!-- ================================================================== -->
+    <div id="results"></div>
+    <!-- ========================================================================== -->
+    <div id="map">
+      <div id="mapnav">
+        <h5>COVID-19 TRACKER</h5>
+        <h5>SEE ALL REPORTS</h5>
+      </div>
+      <img src="https://lh3.googleusercontent.com/yNR9cVp6pG7rn2b0txI7aXwbXUKrNpg-nSgHo1t-uRkVDvD-2T2Yj0bAC668BjjJD4xttxve2O3pnbJEjemSfkGdLFOOX-LYdQaoo_of-Ug3GrIhgUEkEwGsnRy4WCc9ZNLrG8_V=w2400" alt="">
+    </div>
+   <!-- ====================================================================== -->
+   <div class="slider2">
+    <div class="slide" id="slide-1">1</div>
+    <div class="slide" id="slide-2">2</div>
+    <div class="slide" id="slide-3">3</div>
+    <div class="slide" id="slide-4">4</div>
+    <div class="slide" id="slide-5">5</div>
+    <div class="slide" id="slide-1">6</div>
+    <div class="slide" id="slide-2">7</div>
+    <div class="slide" id="slide-3">8</div>
+    <div class="slide" id="slide-4">9</div>
+    <div class="slide" id="slide-5">10</div>
+  </div>
+  </body>
+</html>
+<script src="home.js"></script>
