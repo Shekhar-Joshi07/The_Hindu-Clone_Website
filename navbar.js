@@ -27,11 +27,20 @@ function businessblock(){
     busi.style.display="none";
 }
 function sportsdiv(){
-    const spo=document.querySelector("#businesspop");
+    const spo=document.querySelector("#sportpop");
     spo.style.display="block";
 };
 
 function sportsblock(){
-    const spo=document.querySelector("#businesspop");
+    const spo=document.querySelector("#sportpop");
+    spo.style.display="none";
+}
+function entertenmentdiv(){
+    const spo=document.querySelector("#entertenmentpop");
+    spo.style.display="block";
+};
+
+function entertenmentblock(){
+    const spo=document.querySelector("#entertenmentpop");
     spo.style.display="none";
 }

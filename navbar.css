@@ -7,6 +7,7 @@
     justify-content: space-between;
     margin: auto;
     margin-top: 2%;
+    cursor: pointer;
     
 }
 #popup{
@@ -47,7 +48,7 @@
     padding: 10px;
 }
 
-#sportspop{
+#sportpop{
     display: none;
     display: fixed;
     top: 0px;
@@ -57,7 +58,20 @@
     margin-top: 5px;
 }
 
-#sportspop div{
+#sportpop div{
+    padding: 10px;
+}
+#entertenmentpop{
+    display: none;
+    display: fixed;
+    top: 0px;
+    left: 20%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#entertenmentpop div{
     padding: 10px;
 }
 
