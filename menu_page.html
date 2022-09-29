@@ -9,21 +9,24 @@
     <style>
         *,
         *:before,
-        *:after{
+        *:after {
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
-            background-color:#2a5e88;
+            background-color: #2a5e88;
         }
-        #close{
-         width: auto;
-         height: 20px;
-         color: white;
-         margin-left: 10%;
-         margin-top: 100px;
+
+        #close {
+            width: auto;
+            height: 30px;
+            color: white;
+            margin-left: 10%;
+            margin-top: 100px;
         }
-        #close>img{
+
+        #close>img {
             height: 100%;
         }
 
@@ -32,7 +35,7 @@
             height: 50px;
             margin: auto;
             margin-top: 5px;
-            background-color:#133b5a;
+            background-color: #133b5a;
             display: flex;
 
         }
@@ -55,13 +58,13 @@
             gap: 10px;
             padding-left: 50px;
             margin: auto;
-            margin-top: 20px; 
+            margin-top: 20px;
         }
 
         #sub>div {
             border: 0px solid black;
         }
-        
+
         #image {
             width: 60%;
         }
@@ -71,80 +74,102 @@
             margin-left: 0px;
             margin-top: -10px;
         }
-        a{
+
+        a {
             position: relative;
             text-decoration: none;
-            font-family: 'Poppins' , sans-serif;
+            font-family: 'Poppins', sans-serif;
             color: rgb(243, 239, 239);
             font-size: 18px;
         }
-        a:after{
-            content:"";
+
+        a:after {
+            content: "";
             position: absolute;
             background-color: white;
             height: 1px;
-            width: 0;;
+            width: 0;
+            ;
             left: 0;
             bottom: 0px;
         }
-        a:hover:after{
+
+        a:hover:after {
             width: 100%;
         }
-        
-        #last{
+
+        #last {
             width: 80%;
             height: 50px;
             margin: auto;
             margin-bottom: 30px;
             margin-top: 35px;
-            background-color:#304d68;
+            background-color: #304d68;
             display: flex;
             justify-content: space-between;
 
         }
-        #archive{
+
+        #archive {
             width: 55%;
             height: 100%;
             border: 0px solid red;
             display: flex;
             justify-content: space-around;
             padding-bottom: 30px;
-         
+
         }
-        #connect{
+
+        #connect {
             width: 35%;
             height: 100%;
             border: 0px solid red;
             padding-bottom: 30px;
         }
-        .arch{
+
+        .arch {
             font-size: 15px;
             color: rgb(185, 183, 183);
         }
-        .small{
+
+        .small {
             font-size: 12px;
             color: rgb(189, 188, 188);
         }
-        #connect{
+
+        #connect {
             display: flex;
             justify-content: space-between;
         }
-        #logo{
+
+        #logo {
             display: flex;
             justify-content: space-around;
             width: 50%;
         }
-        .fa-brands{
+
+        .fa-brands {
             margin-top: 20px;
+        }
+
+        .fa-solid {
+            margin-right: 15px;
+        }
+
+        #below {
+            width: auto;
+            height: 30px;
+            color: white;
+            margin-left: 45%;
         }
     </style>
     <script src="https://kit.fontawesome.com/586f39373b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="close" onclick="backToMenu()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCbYlay1YME9cZCwnPIL5XYAtmks9qAibM6g&usqp=CAU" alt="">     CLOSE THIS MENU</div>
+    <div id="close" onclick="backToMenu()"><i class="fa-solid fa-xmark"></i>CLOSE THIS MENU</div>
     <div id="mnav">
-        <p><a  id="trend" href="">TRENDING TODAY</a></p>
+        <p><a id="trend" href="">TRENDING TODAY</a></p>
         <p><a href="">CHENNAI</a></p>
         <p><a href="">HYDRABAD</a></p>
         <p><a href="">BENGALURU</a></p>
@@ -258,7 +283,7 @@
             <p class="dash">---------------------</p>
             <h3><a>Books</a></h3>
             <h6><a class="small">REVIEWS</a></h6>
-            <h6><a class="small">AUTHORS</a></h6>            
+            <h6><a class="small">AUTHORS</a></h6>
             <p class="dash">---------------------</p>
             <h3><a>Children</a></h3>
             <p class="dash">---------------------</p>
@@ -325,33 +350,35 @@
     </div>
     <div id="last">
         <div id="archive">
-            <h3><a  class="arch" href="">ARCHIVE</a></h3>
-            <h3><a  class="arch" href="">CLASSIFIEDS</a></h3>
-            <h3 ><a class="arch" href="">EBOOKS</a></h3>
-            <h3 ><a class="arch" href="">SUBSCRIBE</a></h3>
-            <h3 ><a class="arch" href="">SOCIAL</a></h3>
-            <h3 ><a class="arch" href="">ABOUT US</a></h3>
+            <h3><a class="arch" href="">ARCHIVE</a></h3>
+            <h3><a class="arch" href="">CLASSIFIEDS</a></h3>
+            <h3><a class="arch" href="">EBOOKS</a></h3>
+            <h3><a class="arch" href="">SUBSCRIBE</a></h3>
+            <h3><a class="arch" href="">SOCIAL</a></h3>
+            <h3><a class="arch" href="">ABOUT US</a></h3>
         </div>
         <div id="connect">
-            <div>            
-                <h3><a  class="arch" href="">CONNECT WITH US</a></h3>
+            <div>
+                <h3><a class="arch" href="">CONNECT WITH US</a></h3>
             </div>
             <div id="logo">
                 <div>
-                    <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/thehindu"><i class="fa-brands fa-facebook-f"></i></a>
                 </div>
                 <div>
-                    <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://twitter.com/The_Hindu"><i class="fa-brands fa-twitter"></i></a>
                 </div>
                 <div>
-                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.linkedin.com/school/the-hindu/"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <div>
-                    <a href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.instagram.com/the_hindu/?ref=badge"><i
+                            class="fa-brands fa-square-instagram"></i></a>
                 </div>
             </div>
         </div>
     </div>
+    <div id="below" onclick="backToMenu()"><i class="fa-solid fa-xmark"></i>CLOSE THIS MENU</div>
 </body>
 
 </html>
