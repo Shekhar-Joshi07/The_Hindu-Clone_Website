@@ -210,3 +210,7 @@ const slideShow=()=>{
 slideShow();
 
 // =============================
+let housing=document.getElementById("housingimg")
+housing.addEventListener("click",function(){
+    window.location.href="https://www.thehindu.com/housing-real-estate-india/"
+})
