@@ -18,6 +18,11 @@
 // 3 img-https://lh3.googleusercontent.com/HqZni-gqHxeUnVc-VSvd2MKqjPMqwy1aS2i0rxHSloxoejizTkBPq7Vk46DZK9icFVa4_aK1j8q1qtGD0EbmwrXouYn5RTLgH_57ynjWTgBCvuh_O1i_nAO1pvo1knKkzBO39HoCnw=w2400
 
 
+let  menu = document.getElementById("menu");
+menu.addEventListener("click",function(){
+    window.location.href = "menu_page.html";
+})
+
 let india=  document.getElementById("in")
 india.addEventListener("click",function(){
     news();
@@ -164,6 +169,8 @@ const append=(data) =>{
 
         // console.log(title,description);
     });
+
+
 
 
 }
