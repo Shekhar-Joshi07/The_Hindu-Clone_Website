@@ -1,6 +1,16 @@
 #navbar{
     text-align: center;
+    background-color:#F5F5F5;
+    margin-top: 2%;
+
 }
+
+
+div>div{
+    background-color:#F5F5F5;
+}
+
+
 #Navsecline{
     width: 80%;
     display: flex;
@@ -8,6 +18,7 @@
     margin: auto;
     margin-top: 2%;
     cursor: pointer;
+    background-color:#F5F5F5;
     
 }
 #popup{
@@ -17,10 +28,12 @@
     left: 20%;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     padding: 10px;
+    background-color:#F5F5F5;
 }
 
 #popup div{
     padding: 10px;
+    background-color:#F5F5F5;
 }
 #opinionpop{
     display: none;
@@ -33,6 +46,7 @@
 
 #opinionpop div{
     padding: 10px;
+    background-color:#F5F5F5;
 }
 #businesspop{
     display: none;
@@ -77,7 +91,8 @@
 
 
 #trial{
-    background-color: blue; color: white;
+    background-color: blue;
+     color: white;
     padding: 5px;border-radius: 5px;
 }
 #subscribe{

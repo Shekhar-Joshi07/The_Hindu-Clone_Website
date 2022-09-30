@@ -1,8 +1,4 @@
-body{
-    padding: 0px;
-    margin: 0px;
-   
-}
+
 
 
 #main{
@@ -20,7 +16,7 @@ body{
     justify-content:space-between;
     align-items: center;
     height: 35px;
-    width:100%;
+    width:80%;
     padding-top: 20px;
     border-bottom:solid 1px rgb(167, 165, 165) ;
     margin:auto;
