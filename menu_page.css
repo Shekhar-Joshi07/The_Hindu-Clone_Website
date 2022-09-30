@@ -1,0 +1,155 @@
+
+*:before,
+*:after {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2a5e88;
+}
+
+#close {
+    width: auto;
+    height: 30px;
+    color: white;
+    margin-left: 10%;
+    margin-top: 100px;
+}
+
+#close>img {
+    height: 100%;
+}
+
+#mnav {
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    margin-top: 5px;
+    background-color: #133b5a;
+    display: flex;
+
+}
+
+#trend {
+    color: rgb(230, 201, 43);
+}
+
+p {
+    margin-left: 30px;
+    color: white;
+}
+
+#sub {
+    width: 80%;
+    height: auto;
+    border: 0px solid red;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    padding-left: 50px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#sub>div {
+    border: 0px solid black;
+}
+
+#image {
+    width: 60%;
+}
+
+
+.dash {
+    margin-left: 0px;
+    margin-top: -10px;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(243, 239, 239);
+    font-size: 18px;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 1px;
+    width: 0;
+    ;
+    left: 0;
+    bottom: 0px;
+}
+
+a:hover:after {
+    width: 100%;
+}
+
+#last {
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 35px;
+    background-color: #304d68;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#archive {
+    width: 55%;
+    height: 100%;
+    border: 0px solid red;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+
+}
+
+#connect {
+    width: 35%;
+    height: 100%;
+    border: 0px solid red;
+    padding-bottom: 30px;
+}
+
+.arch {
+    font-size: 15px;
+    color: rgb(185, 183, 183);
+}
+
+.small {
+    font-size: 12px;
+    color: rgb(189, 188, 188);
+}
+
+#connect {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.fa-brands {
+    margin-top: 20px;
+}
+
+.fa-solid {
+    margin-right: 15px;
+}
+
+#below {
+    width: auto;
+    height: 30px;
+    color: white;
+    margin-left: 45%;
+}
