@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    <script src="https://kit.fontawesome.com/3795c8cb36.js" crossorigin="anonymous"></script>
+    <style>
+         #sidebar{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        height: 30px;
+        
+        position: fixed;
+        margin-top:-50px;
+        color: #828282;
+        background-color:#f5f5f5;
+        margin-left: 9%;
+        padding: 0 5px;
+        font-family:"Fira Sans", sans-serif;
+      
+      }
+      #sidebar p{
+        margin-top: 10px;
+      }
+      #sidebar img{
+        margin-top: 8px;
+      }
+
+
+      #top{
+        width: 80%;
+        margin: auto;
+        
+        height: 300px;
+        display: flex;
+        gap: 10px;
+        margin-top: 50px;
+      }
+      #top>div:nth-child(1){
+        width: 40%;
+        height: 100%;
+        
+        background-color: #133B5A;
+        color:#ffffff;
+        font-family:serif;
+        
+        
+      }
+
+      #top>div:nth-child(1)>img{
+        width: 100%;
+        height: 200px;
+        
+       
+      }
+      
+      #topl p{
+        margin-top: -10px;
+      
+      }
+      #top>div:nth-child(2){
+        width: 60%;
+        
+      }
+      #top>div:nth-child(2) div{
+       /* height: 200px; */
+        
+      }
+      #topr{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2%;
+        margin-left: 5px;
+        background-color:#F5F5F5;
+      }
+      .topimg{
+        display: flex;
+      }
+      .topimg img{
+        width: 40%;
+        /* height: 140px; */
+      }
+      .toph3p{
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+       
+      }
+      .toph3p>p{
+       font-size: 13px;
+       margin: -3px 0 0 10px ;
+       width: 89%;
+      }
+      .toph3p>h6{
+        font-size: 15px;
+       margin: 15px 0 0 10px;
+      }
+
+      /* =============================== */
+      #top2,#top3{
+      
+      height: 100px;
+      display: flex;
+      width: 80%;
+      margin: auto;
+      margin-top: 20px;
+      gap: 2%;
+      justify-content: space-between;
+      }
+      #top2>div:nth-child(1){
+        width: 50%;
+      }
+      #top3>div:nth-child(1){
+        width: 50%;
+      }
+
+      /* #top3{
+      
+      height: 140px;
+      display: flex;
+      width: 80%;
+      margin: auto;
+      margin-top: 20px;
+      } */
+
+
+
+      #slider{
+        height: 300px;
+        
+        width: 40%;
+        margin: auto;
+        margin-top:20px        
+      }
+      #slider img{
+        width: 100%;
+        height: 100%;       
+      }
+      #mapnav{
+        width: 70%;
+        margin: auto;
+        display: flex;
+      }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      #h3trend{
+        color:#FE1F1F;
+        margin-left: 10%;
+      }
+      #results{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 2%;
+         height:1100px;
+        
+        font-family: sans-serif;
+      }
+      #results>div{
+        height:200px;
+        
+        /* margin-top: -150px; */
+      }
+      #results>div>img{
+        width: 100%;
+        height: 100px;
+        
+      }
+      #results>div>h3{
+        width: 100%;
+        font-size: 15px;
+       
+        
+      }
+     
+      /* p:hover{
+        color: blue;
+      }
+    */
+      p:hover{
+        text-decoration: underline;
+      }
+      #trend{
+        color:#FE1F1F;
+      }
+      /* ==================================================== */
+      #map{
+        width: 80%;
+        margin: auto;
+        height: 300px;
+        
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+      }
+      #map>img{
+        width: 100%;
+        height: 240px;
+        margin-top: -20px;
+      }
+      #mapnav>h5:nth-child(1), #mapnav>h5:nth-child(2){
+        width: 50%;
+        
+        text-align: center;
+        padding-top: 20px;
+        background-color: #DA4D53;
+        color: white;
+      }
+      #mapnav>h5:nth-child(1):hover, #mapnav>h5:nth-child(2):hover{
+        background-color:#D3232A;
+        text-decoration:underline;
+      }
+      #mapnav{
+        width: 100%;
+        margin: auto;
+        height: 100px;
+        display: flex;
+        margin-top: -20px;
+      }
+/* ======================================================================== */
+.slider2 {
+  width: 80%;
+  height: 200px;
+  display: flex;
+  gap: 1%;
+  overflow-x:auto;
+  overflow-y: hidden;
+  
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  
+ 
+}
+.slide {
+  width: 25%;
+  flex-shrink:0;
+  height: 100%;
+  
+ 
+}
+.slide>img{
+  width: 100%;
+  height: 70%;
+}
+.slide>p{
+  /* text-align: center; */
+ font-size: 11px;
+ font-weight: bold;
+ padding: 0 3px;
+}
+#adv{
+  height: 300px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+#adv>img{
+  width: 100%;
+}
+#mid1{
+  display: flex;
+  gap: 1%;
+  
+  height:250px;
+  width: 80%;
+  margin: auto;
+ margin-bottom: 20px;
+ margin-top: -40px;
+}
+#mid1>div{
+  width: 25%;
+}
+#mid1>div>img{
+  width: 100%;
+  height: 60%;
+}
+#mid1>div>p{
+  padding-bottom: 4px;
+  padding-left: 2px;
+  font-weight: bolder;
+}
+#mid2{
+  display: flex;
+  height: 600px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: #F5F5F5;
+}
+
+#mid2>div:nth-child(1){
+  width: 70%;
+  
+  
+}
+#mid2>div:nth-child(2){
+  width: 30%;
+  
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  /* grid-template-columns: repeat(2) */
+ margin-left: 10px;
+  
+  
+}
+#slider3 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  /* overflow-y: auto; */
+  overflow-y:auto;
+  overflow-x:hidden;
+
+  
+}
+.slide1 {
+  width: 100%;
+  flex-shrink: 0;
+  height: 90px;
+  font-size: 16px;
+  font-family:TundraWeb, serif;
+  color: #282828;
+  
+}
+#slidenav{
+  height: 50px;
+  
+  background-color: #133B5A;
+  color: white;
+  text-align: center;
+
+}
+#mid2-1{
+display: flex;
+
+height: 30%;
+gap: 2%;
+background-color:#F5F5F5;
+}
+#mid2-1 div{
+  
+  width: 33%;
+ 
+}
+#mid2-1 div:nth-child(2),#mid2-1 div:nth-child(3){
+  background-color: #133B5A;
+  color: white;
+}
+#mid2-2{
+  display: flex;
+  gap: 2%;
+  background-color: #F5F5F5;
+  
+}
+#mid2-2-1{
+  width: 50%;
+  height: 70%;
+  margin-top: 10px;
+  
+  background-color: #F5F5F5;
+}
+#mid2-2-1>div:nth-child(1){
+  height:150px;
+  width: 100%;
+  
+  
+}
+#mid2-2-1>div:nth-child(1) img{
+  width: 30%;
+  height: 150px;
+ 
+  
+}
+#mid2-2-1>div:nth-child(2){
+  height: 240px;
+  width: 100%;
+  
+  margin-top: 10px;
+  
+}
+#mid2-2-1>div:nth-child(2) img{
+  height: 170px;
+  width: 100%;
+}
+#mid2-2-2{
+  width: 50%;
+  height: 70%;
+  
+  display: grid;
+  background-color: #F5F5F5;
+  
+}
+#mid2-2-2{
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  margin-top: 10px;
+}
+#mid2-2-2 >div{
+  height: 123px;
+  
+  /* margin-top:5px; */
+  margin-bottom: 10px;
+}
+#mid2-2-2 div img{
+  height: 123px;
+}
+#mid3{
+  width: 80%;
+  margin: auto;
+  height: 570px;
+  
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: #F5F5F5;
+
+}
+#mid3>div:nth-child(1){
+  display: flex;
+  width: 100%;
+  height: 250px;
+  gap: 2%;
+  border:1px solid;
+  margin-bottom: 10px;
+  background-color: #F5F5F5;
+}
+#mid3>div:nth-child(1)>div{
+  width:33%;
+}
+#mid3>div:nth-child(2),#mid3>div:nth-child(3){
+  display: flex;
+  width: 100%;
+  height: 150px;
+  gap: 2%;
+  border:1px solid;
+  margin-bottom: 10px;
+  background-color: #F5F5F5;
+
+}
+#mid3>div:nth-child(2)>div,#mid3>div:nth-child(3)>div{
+  width:25%;
+}
+
+
+/* =============================================== */
+/* HOver */
+p:hover,h3:hover,h6:hover{
+  text-decoration:underline;
+  cursor:pointer;
+}
+/* ======================================== */
+/* color */
+  div>div{
+    background-color:white
+  }
+  html{
+ background-color:#F5F5F5;
+  }
+  .cheading{
+    color:#FE1F1F;
+    margin-left: 10%;
+  }
+  p{
+    font-family: serif;
+    color: #282828;
+  }
+  h6{
+    font-family: "Fira Sans", sans-serif;
+    color: #133b5a;
+  }
+  /* #sidebar>p{
+    color: white;
+  } */
+  
+ 
+  
+    </style>
+  </head>
+  <body>
+    <!-- Give Navbar with id "navbar"  -->
+    
+    <div id="navbar">
+    
+     
+    </div>
+    <!-- ============================================================= -->
+    <div id="sidebar">
+      <p style="color:#FE1F1F;"  id="trend">Trending Today</p>
+      <p id="in">India</p>
+      <p id="us">Usa</p>
+      <p id="ch">China</p>
+      <p id="uk">UK</p>
+      <p id="nz">New Zealand</p>
+      <img id="housingimg" style="width:10%;height:20px" src="https://www.thehindu.com/theme/images/th-online/housing.png" alt="">
+    </div>
+    <!-- =========================================================================== -->
+
+    <div id="top">
+      <div id="topl">
+        <img src="https://th-i.thgim.com/public/todays-paper/nn9irl/article65272587.ece/alternates/LANDSCAPE_660/vbk-stock-ministry%20of%20home%20affairs-%20home%20ministry-mha" alt="">
+        <h3>PFI, eight front organisations including Campus Front of India banned for five years</h3>
+        <p style="color: white;">VIJAITA SINGH</p>
+      </div>
+      <div id="topr">
+        <div class="topimg">
+          <img src="https://th-i.thgim.com/public/incoming/bd8300/article65943635.ece/alternates/SQUARE_115/PTI09_27_2022_000051B.jpg" alt="">
+          <div class="toph3p">
+          <h6>CONGRESS PRESIDENTIAL ELECTION | INDIA</h6>
+          <p>Three Ashok Gehlot Loyalists get notice; no clarity on Congress president poll</p>
+            </div>
+        </div>
+        <div class="topimg">
+          <img src="https://th-i.thgim.com/public/incoming/jidukx/article65944752.ece/alternates/SQUARE_115/2022-09-27T183330Z_84178340_RC2RJV9S1G6M_RTRMADP_3_SAUDI-POLITICS.JPG" alt="">
+          <div class="toph3p">
+          <h6>WORLD</h6>
+          <p>Saudi King names Crown Prince MbS as Prime Minister</p>
+            </div>
+        </div>
+        <div class="topimg">
+          <img src="https://th-i.thgim.com/public/incoming/ix1szd/article65941332.ece/alternates/SQUARE_115/PTI09_24_2022_000146B.jpg" alt="">
+          <div class="toph3p">
+          <h6>PFI RAIDS | INDIA</h6>
+          <p>Over 170 PFI activists detained across India
+            </p>
+            </div>
+        </div>
+        <div class="topimg">
+          <img src="https://th-i.thgim.com/public/incoming/gyoe97/article65943662.ece/alternates/SQUARE_115/DSC_8765.jpg" alt="">
+          <div class="toph3p">
+          <h6>DELHI </h6>
+          <p> CBI arrests Vijay Nair in Delhi Excise Policy case
+            </p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- ============================================================================= -->
+      <div id="top2">
+        <div class="topimg">
+          <img src="https://th-i.thgim.com/public/incoming/f5lzzk/article65945217.ece/alternates/SQUARE_115/IMG_TH11-Bindu-India%E2%80%99s_u_2_1_O2A8UC5D.jpg" alt="">
+          <div class="toph3p">
+          <h6>OPINION | COMMENT</h6>
+          <p>
+            India must fine-tune its strategy to eliminate TB</p>
+            </div>
+        </div>
+        <div class="topimg">
+          <img src="https://th-i.thgim.com/public/incoming/qu0bit/article65946155.ece/alternates/SQUARE_115/2022-09-28T093208Z_96056652_RC2OPV9U7R7G_RTRMADP_3_BRITAIN-BONDS.JPG" alt="">
+          <div class="toph3p">
+          <h6>ECONOMY</h6>
+          <p>Bank of England to buy U.K. government bonds to stabilise financial markets
+            1 hr</p>
+            </div>
+        </div>
+      </div>
+   <!-- ================================================================================= -->
+    <div id="slider"></div>
+    
+    <!-- ================================================================================================== -->
+    <div id="top3">
+      <div class="topimg">
+        <img src="https://th-i.thgim.com/public/business/Industry/7hps0i/article38271943.ece/alternates/SQUARE_115/CentralElectronicsLimitedjpg" alt="">
+        <div class="toph3p">
+        <h6>INDUSTRY</h6>
+        <p>Govt terminates sale of CEL to Nandal Finance</p>
+          </div>
+      </div>
+      <div class="topimg">
+        <img src="https://th-i.thgim.com/public/incoming/h420nm/article65943556.ece/alternates/SQUARE_115/IMG_thvli-supreme-court-_4_1_7IA6L7U0.jpg" alt="">
+        <div class="toph3p">
+        <h6>INDIA</h6>
+        <p>SC Constitution Bench to examine on November 15 if greater restrictions can be imposed on freedom of speech of Ministers</p>
+          </div>
+      </div>
+    </div>
+    <hr>
+    <!-- ===================================================== -->
+    <h3  class="cheading"  id="h3trend"></h3>
+    <hr>
+    <!-- ================================================================== -->
+    <div id="results"></div>
+    <!-- ========================================================================== -->
+    <div id="map">
+      <div id="mapnav">
+        <h5>COVID-19 TRACKER</h5>
+        <h5>SEE ALL REPORTS</h5>
+      </div>
+      <img src="https://lh3.googleusercontent.com/yNR9cVp6pG7rn2b0txI7aXwbXUKrNpg-nSgHo1t-uRkVDvD-2T2Yj0bAC668BjjJD4xttxve2O3pnbJEjemSfkGdLFOOX-LYdQaoo_of-Ug3GrIhgUEkEwGsnRy4WCc9ZNLrG8_V=w2400" alt="">
+    </div>
+    <hr>
+   <!-- ====================================================================== -->
+   <h3 style="color: #133b5a;"  class="cheading"  >Top Picks:-  </h3>
+   <hr>
+   <div class="slider2">
+    <div class="slide" id="slide-1">
+      <img src="https://th-i.thgim.com/public/incoming/d772ml/article65949086.ece/alternates/LANDSCAPE_230/Obit_Coolio_46034.jpg" alt="">
+      <p>'Gangsta's Paradise' rapper Coolia dies aged 59</p>
+    </div>
+    <div class="slide" id="slide-2">
+      <iframe width="100%" height="70%" src="https://www.youtube.com/embed/X9DV260FhxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>#ManiRatnam on #Navarasa, #PonniyinSelvan and filming during the pandemic</p>
+    </div>
+    <div class="slide" id="slide-3">
+      <img src="https://th-i.thgim.com/public/news/national/y6qhxh/article65947771.ece/alternates/LANDSCAPE_320/Fdv6N_AUoAQpfJy.jfif" alt="">
+      <p>ASI finds Buddhist caves, temples in Madhya Pradesh’s Bandhavgarh Tiger Reserve</p>
+    </div>
+    <div class="slide" id="slide-4">
+      <img src="https://th-i.thgim.com/public/news/national/tamil-nadu/nmytyf/article65947618.ece/alternates/LANDSCAPE_300/insta.jpg" alt="">
+      <p>Instagram unveils new parental supervision tool</p>
+    </div>
+    <div class="slide" id="slide-5">
+      <iframe width="100%" height="70%" src="https://www.youtube.com/embed/k-1lpXHgOlc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>Business Matters | Is there a case for digital currency when we have UPI?
+      </p>
+    </div>
+    <div class="slide" id="slide-1">
+      <img src="https://th-i.thgim.com/public/incoming/lqlybj/article65945464.ece/alternates/LANDSCAPE_320/2022-09-28T050010Z_1376624604_RC2MPW90RW3R_RTRMADP_3_UKRAINE-CRISIS-PUTIN.JPG" alt="">
+      <p>Can Putin’s ‘partial mobilisation’ of reservists change the course of the Ukraine war? | In Focus podcast</p>
+    </div>
+    <div class="slide" id="slide-2">
+      <img src="https://th-i.thgim.com/public/incoming/f5lzzk/article65945217.ece/alternates/LANDSCAPE_320/IMG_TH11-Bindu-India%E2%80%99s_u_2_1_O2A8UC5D.jpg" alt="">
+      <p>India must fine-tune its strategy to eliminate Tuberculosis</p>
+    </div>
+    <div class="slide" id="slide-3">
+      <img src="https://th-i.thgim.com/public/entertainment/movies/7t8z0d/article65946404.ece/alternates/LANDSCAPE_320/athena.jpeg" alt="">
+      <p>‘Athena’ movie review: Romain Gavras gives us a spectacle to behold</p>
+    </div>
+    <div class="slide" id="slide-4">
+      <img src="https://th-i.thgim.com/public/incoming/48kzd6/article65829336.ece/alternates/LANDSCAPE_320/thvli%20rape%20sexual%20harrassment.jfif" alt="">
+      <p>Malayalam actors sexually assaulted when leaving a crowded promotion event at a Kozhikode mall</p>
+    </div>
+    <div class="slide" id="slide-5">
+      <img src="https://th-i.thgim.com/public/sci-tech/technology/s40abn/article65945652.ece/alternates/LANDSCAPE_320/IMG_5582.jpeg" alt="">
+      <p>Lenovo Yoga AIO 7 | Stylish and capable, but expensive</p>
+    </div>
+  </div>
+  <!-- ============================================================================================================================================================ -->
+  <div id="adv">
+    <img src="https://lh3.googleusercontent.com/yKnuAgO-0_WwAddeBS-w2bnOezOBsi-ZirtpOLrsQaLjj_5GRnfq4WVG0m5pWlpXUegmIorKfCSJ_yGAH1NuoQsxzqasNtcoZE_H8GRdQhMJbV77oz2lAMGRroWmdbKg-AL9vStv=w2400" alt="">
+  </div>
+  <!-- ================================================================================================================================================== -->
+  <div id="mid1">
+    <div>
+      <img src="https://fl-i.thgim.com/public/incoming/icken3/article65721521.ece/alternates/FREE_1200/30_YT_gandhi.jpg" alt="">
+      <p>1948: Assassination of Mahatma Gandhi</p>
+    </div>
+    <div>
+      <img src="https://lh3.googleusercontent.com/7d3fWjzRdtp3QWO2RGF-MLoG8WC0XlAUBphF4H3miGj2dkoorlPMKtZWAzSJnfrzmT_QwFKYHDCieDjO4npnnfEBNulsvgt36j6aqnHG4DE9_d4ZCIpXaSlFzjTNE34P2m-nbfqt=w2400" alt="">
+      <p>‘Nayanthara: Beyond The Fairy Tale’: Actor talks about marriage, ‘Lady Superstar’ tag in Netflix documentary</p>
+    </div>
+    <div>
+      <img src="https://th-i.thgim.com/public/incoming/unomi/article65946212.ece/alternates/SQUARE_115/Pakistan_Flood_Climate_02663.jpg-b8dba.jpg" alt="">
+      <p>In nature's warning signs,a nudge to riparian states</p>
+    </div>
+    <div>
+      <img src="https://th-i.thgim.com/public/incoming/zbw6nn/article65946267.ece/alternates/SQUARE_115/IMG_Navy_warships.jpeg_2_1_43A920N0.jpg" alt="">
+      <p>Rediscovering the BAy of Bengal</p>
+       
+    </div>
+  </div>
+  <!-- ======================================================================================================================================================== -->
+    <div id="mid2">
+      <div>
+        <div id="mid2-1">
+          <div>
+            <img style="width:100% ;height:100%"    src="https://www.thehindu.com/theme/images/th-online/editorLogo.png" alt="">
+          </div>
+          <div>
+            <h6 style="color: white;padding-left :10px;">EDITORIAL</h6>
+            <p style="color: white;padding-left :10px;">Sledgehammer approach: On PFI ban</p>
+          </div>
+          <div>
+            <h6 style="color: white ;padding-left :10px;">EDITORIAL</h6>
+            <p style="color: white;padding-left :10px;">Evolving chair: On the Chief of Defence Staff post</p>
+          </div>
+        </div>
+        <!-- ============================ -->
+        <div id="mid2-2">
+        <div id="mid2-2-1">
+          <div>
+            <div class="topimg">
+              <img src="https://th-i.thgim.com/public/incoming/3zhgh5/article65951316.ece/alternates/SQUARE_115/IMG_Bengaluru_floods_2_1_GGA7UOM1.jpg" alt="">
+              <div class="toph3p">
+              <h6> LEAD</h6>
+              <p>After the floods, Bengaluru needs to clean up its act</p>
+                </div>
+            </div>
+          </div>
+          <div>
+            <h6 style="padding-left:10px;font-weight: bolder;font-family:Fira Sans, sans-serif;font-size: 12px;">CARTOON</h6>
+            <img src="https://th-i.thgim.com/public/news/national/v11hwf/article65930657.ece/alternates/LANDSCAPE_560/Untitled-Artwork.jpg" alt="">
+          </div>
+        </div>
+        <!-- ===================================== -->
+
+        <div id="mid2-2-2">
+          <div class="topimg">
+            <img src="https://th-i.thgim.com/public/opinion/op-ed/msdaon/article65951381.ece/alternates/SQUARE_115/iStock-1319612442.jpg" alt="">
+            <div class="toph3p">
+            <h6>COMMENT</h6>
+            <p>India lacks a complete paediatric cardio-care service</p>
+              </div>
+          </div>
+          <!-- ====== -->
+          <div class="topimg">
+            <img src="https://th-i.thgim.com/public/opinion/op-ed/d8c2rh/article65950641.ece/alternates/SQUARE_115/iStock-1160133643.jpg" alt="">
+            <div class="toph3p">
+            <h6>COMMENT</h6>
+            <p>How much should India prop up the rupee?</p>
+              </div>
+          </div>
+          <!-- ====== -->
+          <div class="topimg">
+            <img src="https://th-i.thgim.com/public/incoming/q3x1fd/article65951895.ece/alternates/SQUARE_115/Maryland_Serial_Podcast_13418.jpg-4ea0a.jpg" alt="">
+            <div class="toph3p">
+            <h6>NOTEBOOK | COMMENT</h6>
+            <p> The case for serial listening
+              </p>
+              </div>
+          </div>
+        </div>
+        
+        </div>
+        
+      </div>
+      <div>
+        <div id="slidenav">
+          <h5>Trending on The Hindu</h5>
+        </div>
+      <div id="slider3">
+        <div class="slide1" id="slide-1">
+          <p><i class="fa-solid fa-eye">13k</i> Three Ashok Gehlot loyalists get notice; no clarity on Congress president poll</p>
+        </div>
+           ----------------------------------------------------
+        <div class="slide1" id="slide-2">
+          <p><i class="fa-solid fa-eye">11k</i> Senior Bihar official rebukes girl student who asks for sanitary pad
+          </p>
+        </div>
+        ----------------------------------------------------
+        <div class="slide1" id="slide-3">
+          <p><i class="fa-solid fa-eye">10k</i> Denying safe abortion to single women with pregnancies up to 24 weeks is violative of their reproductive rights, bodily autonomy: SC</p>
+        </div>
+        ----------------------------------------------------
+        <div class="slide1" id="slide-4">
+          <p><i class="fa-solid fa-eye">9k</i> Saudi King names Crown Prince Mohammed bin Salman as Prime Minister</p>
+        </div>
+        ----------------------------------------------------
+        <div class="slide1" id="slide-5">
+          <p><i class="fa-solid fa-eye">8k</i>Rajasthan Congress MLA questions Ashok Gehlot’s leadership capacity</p>
+        </div>
+        ----------------------------------------------------
+        <div class="slide1" id="slide-1">
+          <p><i class="fa-solid fa-eye">7k</i> Lt. General Anil Chauhan (retd.) appointed next Chief of Defence Staff</p>
+        </div>
+        ----------------------------------------------------
+        <div class="slide1" id="slide-2">
+          <p><i class="fa-solid fa-eye">9k</i> Supreme Court to hear on October 12 pleas challenging demonetisation</p>
+        </div>
+        ----------------------------------------------------
+        <div class="slide1" id="slide-3">
+          <p><i class="fa-solid fa-eye">6k</i> Tread carefully: On the power to remove online content</p>
+        </div>
+        ----------------------------------------------------
+        <div class="slide1" id="slide-4">
+          <p><i class="fa-solid fa-eye">6k</i>Controversy breaks out over presence of Indian “observer” in Donbas referendum</p>
+        </div>
+        ----------------------------------------------------
+        <div class="slide1" id="slide-5">
+          <p><i class="fa-solid fa-eye">5k</i> Sabotage suspected after leaks in Russia’s Nord Stream pipelines</p>
+        </div>
+        ----------------------------------------------------
+      </div>
+      
+      </div>
+    </div>
+    <hr>
+    <!-- ===================================================================================================== -->
+    <h3 style="color: #133b5a;"  class="cheading"  >MULTIMEDIA:-  </h3>
+    <hr>
+    <div id="mid3">
+      <div id="mid3-1">
+        <div>
+          <iframe width="100%" height="250px" src="https://www.youtube.com/embed/NCBeitrmuIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+          <iframe width="100%" height="250px" src="https://www.youtube.com/embed/dF802M0wnKM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+          <iframe width="100%" height="250px" src="https://www.youtube.com/embed/dxWRxmy42n8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+      </div>
+      <div id="mid3-2">
+        <div>
+          <iframe width="100%" height="150px" src="https://www.youtube.com/embed/22v1nFT06B0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+          <iframe width="100%" height="150px" src="https://www.youtube.com/embed/lZyaDE1kZPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+          <iframe width="100%" height="150px" src="https://www.youtube.com/embed/vPshUZrQLaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+          <iframe width="100%" height="150px" src="https://www.youtube.com/embed/8ovXuonyzYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div id="mid3-3">
+        <div>
+          <iframe width="100%" height="150px" src="https://www.youtube.com/embed/yixIx07rPrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+          <iframe width="100%" height="150px" src="https://www.youtube.com/embed/eArsoOFpz9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+          <iframe width="100%" height="150px" src="https://www.youtube.com/embed/lZyaDE1kZPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+          <iframe width="100%" height="150px" src="https://www.youtube.com/embed/SwUTxdZOFGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
+<script src="home.js"></script>
