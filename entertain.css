@@ -6,6 +6,28 @@
     box-sizing: border-box;
 }
 
+
+#hr{
+    margin-top: 20px;
+    width: 80%;
+}
+#hr2{
+ 
+    width: 80%;
+}
+#channel_logo{
+    width: 400px;
+    height: 80%;
+    margin-left: 30%;
+}
+#logo_div{
+    height: 50px;
+    border: 0px solid red;
+    width: 80%;
+    margin: auto;
+    padding-top: 8px;
+}
+
 /* body{
     color:#f5f5f5;
 } */
