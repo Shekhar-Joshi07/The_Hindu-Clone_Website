@@ -10,6 +10,9 @@
     cursor: pointer;
     
 }
+#Navsecline button:hover{
+    background-color: blue;color: white;
+}
 #popup{
     display: none;
     display: fixed;
