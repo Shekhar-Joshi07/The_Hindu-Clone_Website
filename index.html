@@ -68,10 +68,7 @@
         width: 60%;
         
       }
-      #top>div:nth-child(2) div{
-       /* height: 200px; */
-        
-      }
+    
       #topr{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -487,7 +484,69 @@ p:hover,h3:hover,h6:hover{
   p{
     font-family: serif;
     color: #282828;
-  }
+}
+
+#trend{
+  font-family: "Fira Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+}
+
+#in{
+  font-family: "Fira Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    
+   
+}
+
+#ch{
+  font-family: "Fira Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+}
+
+#uk{
+  font-family: "Fira Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+}
+
+#nz{
+  font-family: "Fira Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+}
+
+#us{
+  font-family: "Fira Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+}
   h6{
     font-family: "Fira Sans", sans-serif;
     color: #133b5a;
@@ -546,16 +605,18 @@ p:hover,h3:hover,h6:hover{
   </div>
     
     <div id="navbar">
-      <div ><img style="width:400px ;" src="https://www.thehindu.com/theme/images/th-online/logo.png" alt=""></div>
-      <div id="LOGOSPAN">
+      <div  style="background-color: #F5F5F5;" ><img style="width:400px ;" src="https://www.thehindu.com/theme/images/th-online/logo.png" alt=""></div>
+      <div  style="background-color: #F5F5F5;" id="LOGOSPAN">
           <span style="font-weight: bolder;">LATEST NEWS</span>
           <span>WEDNESDAY,SEPTEMBER 28,2022</span>
           <SPan style="font-weight: bolder;">E-PAPER</SPan>
       </div>
       <div id="Navsecline">
-          <div id="menu">Menu</div>
-          <div>TODAY'S PAPER</div>
-          <div id="news" onmouseenter="newsfeed()" onmouseout="newsblock()">NEWS
+          <div style="  background-color: #f5f5f5;
+          " id="menu"> <i style="font-size: 15px;" class="fa-solid fa-bars"></i> Menu</div>
+          <div id="today" style="  background-color: #f5f5f5;
+          ">TODAY'S PAPER</div>
+          <div style="background-color: #F5F5F5;" id="news" onmouseenter="newsfeed()" onmouseout="newsblock()">NEWS
               <div id="popup">
                   <div>INDIA</div>
                   <div>WORLD</div>
@@ -564,7 +625,7 @@ p:hover,h3:hover,h6:hover{
               </div>
           </div>
 
-          <div id="opinion" onmouseenter="opiniondiv()" onmouseout="opinionblock()">OPINION
+          <div  style="background-color: #F5F5F5;"id="opinion" onmouseenter="opiniondiv()" onmouseout="opinionblock()">OPINION
               <div id="opinionpop">
                   <div>CARTOON</div>
                   <div>COLUMNS</div>
@@ -577,7 +638,7 @@ p:hover,h3:hover,h6:hover{
                   <div>LETTERS</div>
               </div>
           </div>
-          <div id="business" onmouseenter="businessdiv()" onmouseout="businessblock()">BUSINESS
+          <div  style="background-color: #F5F5F5;" id="business" onmouseenter="businessdiv()" onmouseout="businessblock()">BUSINESS
               <div id="businesspop">
                   <div>AGREE BUSINESS</div>
                   <div>INDUSTRY</div>
@@ -587,7 +648,7 @@ p:hover,h3:hover,h6:hover{
                   <div>STOCK QUOTES</div>
               </div>
           </div>
-          <div id="sports" onmouseenter="sportsdiv()" onmouseout="sportsblock()">SPORT
+          <div  style="background-color: #F5F5F5;" id="sports" onmouseenter="sportsdiv()" onmouseout="sportsblock()">SPORT
               <div id="sportpop">
                   <div>CRICKET</div>
                   <div>FOOTBALL</div>
@@ -600,7 +661,7 @@ p:hover,h3:hover,h6:hover{
 
               </div>
           </div>
-          <div id="entertenment" onmouseenter="entertenmentdiv()" onmouseout="entertenmentblock()">ENTERTENMENT
+          <div  style="background-color: #F5F5F5;" id="entertenment" onmouseenter="entertenmentdiv()" onmouseout="entertenmentblock()">ENTERTENMENT
               <div id="entertenmentpop">
                   <div>ART</div>
                   <div>DANCE</div>
@@ -610,8 +671,8 @@ p:hover,h3:hover,h6:hover{
                   <div>THEATRE</div>
               </div>
           </div>
-          <div>CROSSWORD</div>
-          <div>SCIENCE</div>
+          <div id="crossword" style="background-color: #F5F5F5;">CROSSWORD</div>
+          <div id="science"  style="background-color: #F5F5F5;">SCIENCE</div>
           <div><button id="trial">GET TRIAL</button></div>
           <div><button id="subscribe">SUBSCRIBE NOW</button></div>
           <div><button id="login">LOG IN</button></div>
@@ -620,11 +681,11 @@ p:hover,h3:hover,h6:hover{
     <!-- ============================================================= -->
     <div id="sidebar">
       <p style="color:#FE1F1F;"  id="trend">Trending Today</p>
-      <p id="in">India</p>
-      <p id="us">Usa</p>
-      <p id="ch">China</p>
+      <p id="in">INDIA</p>
+      <p id="us">USA</p>
+      <p id="ch">CHINA</p>
       <p id="uk">UK</p>
-      <p id="nz">New Zealand</p>
+      <p id="nz">NEW ZEALAND</p>
       <img id="housingimg" style="width:10%;height:20px" src="https://www.thehindu.com/theme/images/th-online/housing.png" alt="">
     </div>
     <!-- =========================================================================== -->
@@ -954,7 +1015,7 @@ p:hover,h3:hover,h6:hover{
       </div>
     </div>
 
-    <div id="main">
+    <div style=" background-color: #f5f5f5;" id="main">
       <div id="socialhead">
           <div id="sociallinks">
               <div class="slink">
@@ -985,8 +1046,9 @@ p:hover,h3:hover,h6:hover{
               </div>
           </div>
           
-          <div id="logo " >
-              <img style="width: 300px;" src="https://www.thehindu.com/theme/images/th-online/logo.png" alt="">
+          <div style="  background-color: #f5f5f5;
+          " id="logo " >
+              <img  style="width: 300px;" src="https://www.thehindu.com/theme/images/th-online/logo.png" alt="">
             
           </div>
 
@@ -1263,6 +1325,6 @@ p:hover,h3:hover,h6:hover{
   </div>
 </body>
 </html>
-<script src="home.js"></script>
+<script src="index.js"></script>
 
 <script src="navbar.js"></script>

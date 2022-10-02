@@ -17,6 +17,10 @@
 // 2 img-https://lh3.googleusercontent.com/oEk3g5fAnv_7cVraG5OOm9INzas0mhjmznBJeqreW7X5t8bCr7zeKkI6KIeEK2ylaX6JFdzk6b7h44GLk6C37mpMApE6QZBpzcP4cyLjM0q31SC6Mj3a5aTUaNrh4KbGeXvt9PlmqA=w2400
 // 3 img-https://lh3.googleusercontent.com/HqZni-gqHxeUnVc-VSvd2MKqjPMqwy1aS2i0rxHSloxoejizTkBPq7Vk46DZK9icFVa4_aK1j8q1qtGD0EbmwrXouYn5RTLgH_57ynjWTgBCvuh_O1i_nAO1pvo1knKkzBO39HoCnw=w2400
 
+let login = document.getElementById("login");
+login.addEventListener("click",()=>{
+    window.location.href= "signup.html"
+})
 
 let  menu = document.getElementById("menu");
 menu.addEventListener("click",function(){

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<style>
+    body{
+            margin:0;
+            padding:0;
+            background-size: cover;
+            background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwoNCAgICAoPCAcHBw0HBwcHCA8ICQcKIBEWFhURHxMYHSggGBolJx8fITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0NDg0PFSsZFRktNzctNysrKy03KysrKysrKy03LS0rNy0rKysrKysrKysrLSstKysrKysrKysrKysrK//AABEIAJ8BPgMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAACAQADB//EABkQAQEBAQEBAAAAAAAAAAAAAAARARIhAv/EABgBAQEBAQEAAAAAAAAAAAAAAAABAgMF/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oADAMBAAIRAxEAPwDxRijR6UcqLHGhCjGhRYsShyvJxoQoRocaEKEXkosWJQiwo0IUYkONCFCNDjQKEWFGgUYkONAoRocaBQiwo0IUYkONCFDlI6RIQoRocaJFoRI6RIQoRocSEWgxxokKDQo0IU40KLGmKEWFFWJQjQ40IUY0ONFiUIuYUWEKEWFGhCixReSJQjQ43KwoND5bkhQjQ+W5IUI0PluSFCND5bkhQjQ+W5IUGOJEi0YkONCFDlI6RIQoRocaJFrnGjpEhChEjokItCND3EhCnFhRY1GK5xc+TjLEo8tDaESjGhZixYUY0KLCJQjQ40IUYxRYsKDQ4kIlGNDjQhQjQ40IUI0ONCFCNDjQhQY40IUIkONCLQjQ40SFCNC5aEKEaHuJEi0OWhxCFCJHRoRa5xI6RIkWnFhRo3HOjFhRosSjFhZjQhRjQovKxKMaG0IUFmlFhEoTVhcryQrnFhRosKMaHGhEoRuTjQi0OWhxoRKEaHEhFoxI6RIQoRprpynKQoRHSJCFCNDjQi1zjQ+W5IUIkOJEi0YkONuEK58tDiRItOLFi8tMUYsKYsWJRjclmLFiUIuYUaEKkaFGixKMaacaEKMaFG5WFGLCjQiUY0LloFGNCjQhRjQo0IUY0KNAoxIcaEKEaFy0ItD1ocSJCjE3DaEKExtwo0SLQjQmhFoJHSJuJCucaHEiRacWKsbjFGLFixUo5ixcxYFGLCjRYlGLmFGixKMWFmNCFGNCzF5WJRjQosIlBjjEKDHGgUGONAoMcaEKESOkSEWhGh8tEhQiQ40ItDcSHGhChEhxokWhEhpuItGJD3EgtGJCZIUo2YUWNRmjFirFiVI2YUXMVKMWLFglGLmFmLFiUY0KLCJQi5hRosKMWFGixKMaFFhChEjpGhChGhxoQoRocSEKMTk40IUNxIcaJFoRoaRIUIkdIkItc40PcRFoNC3GgtCJDiJFoNC1tSLVWKrTFSKsXMVKkXFzFWIkXMXMWLEoxYqxYlSMWYsWJRjZhRYRKMaFF5WFCNDjQiUeWhRoQoxuSjQhQjQ40IUIkdOUhFoRjiRIUIkONuJFoRIcSJFoakOJCLQaEkSLRSE2ooRDRFqrGXFZaLisqLFzGZrErLi5i4sZSLFWKVIuYuYsWM1MxYqxYlGLFXMIlGNDjRYlGNDjQhQjQ40IVzjQ424RaESHE3EKMGHGFobibhxNxItBNJEaHUNNxIoRNwkZWikJkaCIWoiqrYqoy42LissWCWLiKuIuNIuYrYqstisqssuY2KqMsZY1EaLFiiUVirFiUYhRiFDcSHqbiLRiEmpFHcQhRUQk1FHcHTTUaBl1EaHULRZVNRUTVRFRGn//2Q==);
+        }
+
+    #container{
+        width: 300px;
+        height: auto;
+        margin:auto;
+        margin-top:50px ;
+        border:0px solid red;
+        border-radius: 10px;
+        padding: 10px 17px 30px 50px;
+       box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+       background-color: white ;
+    }
+
+
+
+
+    #container>h2{
+        width:40%;
+        border: px solid red;
+        margin: auto;
+        margin-bottom: 30px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #container>form{
+        border: 0px solid red;
+        
+
+    }
+  
+   
+
+</style>
+
+<body>
+   
+    <div id="container">
+        <h2>Login</h2>
+        <form>
+        <p>Email</p>
+        <input type="email" id="Useremail" placeholder="Enter email" style="width: 250px; height: 25px; margin-top: -6px; margin-bottom: 7px;"/>
+        <p>Password</p>
+        <input type="text" id="Userpassword" placeholder="Enter password" style="width: 250px; height: 25px; margin-top: -6px; margin-bottom: 7px;"/>
+        <input id="button" type="submit" value="Login" style="width: 259px; height: 35px; margin-top: 20px; margin-bottom: 7px;"/>
+       
+
+    </form>
+
+    </div>
+    
+</body>
+</html>
+
+<script>
+    
+   
+ document.querySelector("form").addEventListener("submit",login)
+
+ function login(){
+    event.preventDefault()
+    let userEmail=document.querySelector("#Useremail").value;
+    let userPassword=document.querySelector("#Userpassword").value;
+    
+    if(userEmail==""||userPassword==""){
+        alert("Incomplete Credentials")
+
+
+    }else{
+        localStorage.getItem("email");
+        localStorage.getItem("pass");
+    }
+
+    if( userEmail ==  localStorage.getItem("email") && userPassword == localStorage.getItem("pass")){
+        document.querySelector("#button").addEventListener("click",function(){
+        window.location.href="index.html"
+    })
+ 
+    }else{
+        alert('Wrong Password');
+    }
+    
+ }
+
+
+</script>

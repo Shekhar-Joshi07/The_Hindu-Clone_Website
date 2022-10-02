@@ -1,14 +1,9 @@
 #navbar{
     text-align: center;
-    background-color:#F5F5F5;
     margin-top: 2%;
 
 }
 
-
-div>div{
-    background-color:#F5F5F5;
-}
 
 
 #Navsecline{
@@ -21,88 +16,735 @@ div>div{
     background-color:#F5F5F5;
     
 }
+
+#menu{
+    
+
+}
+
+#today{
+        /* Font & Text */
+        font-family: "Fira Sans", sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        line-height: 25px;
+        text-decoration: underline solid rgb(130, 130, 130);
+        text-align: left;
+        text-indent: 0px;
+        text-transform: uppercase;
+        vertical-align: baseline;
+        white-space: normal;
+        word-spacing: 0px;
+    
+        /* Color & Background */
+        background-attachment: scroll;
+        background-color: rgba(0, 0, 0, 0);
+        background-image: none;
+        background-position: 0% 0%;
+        background-repeat: repeat;
+        color: rgb(130, 130, 130);
+    
+        /* Box */
+        height: 30px;
+        width: 107.875px;
+        border: 0px none rgb(130, 130, 130);
+        border-top: 0px none rgb(130, 130, 130);
+        border-right: 0px none rgb(130, 130, 130);
+        border-bottom: 0px none rgb(130, 130, 130);
+        border-left: 0px none rgb(130, 130, 130);
+        margin: 0px;
+        padding: 0px 5px 5px;
+        max-height: none;
+        min-height: 0px;
+        max-width: none;
+        min-width: 0px;
+    
+        /* Positioning */
+        position: static;
+        top: auto;
+        bottom: auto;
+        right: auto;
+        left: auto;
+        float: none;
+        display: block;
+        clear: none;
+        z-index: auto;
+    
+        /* List */
+        list-style-image: none;
+        list-style-type: none;
+        list-style-position: outside;
+    
+        /* Table */
+        border-collapse: separate;
+        border-spacing: 0px 0px;
+        caption-side: top;
+        empty-cells: show;
+        table-layout: auto;
+    
+        /* Miscellaneous */
+        overflow: visible;
+        cursor: pointer;
+        visibility: visible;
+    
+        /* Effects */
+        transform: none;
+        transition: all 0.5s ease-in-out 0s;
+        outline: rgb(130, 130, 130) none 0px;
+        outline-offset: 0px;
+        box-sizing: border-box;
+        resize: none;
+        text-shadow: none;
+        text-overflow: clip;
+        word-wrap: normal;
+        box-shadow: none;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+}
+
+
+#news{
+    
+    font-family: "Fira Sans", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    text-decoration: none solid rgb(130, 130, 130);
+    color: rgb(130, 130, 130);
+    
+}
+
+
+#opinion{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    text-decoration: none solid rgb(130, 130, 130);
+    color: rgb(130, 130, 130);
+}
+
+#business{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    text-decoration: none solid rgb(130, 130, 130);
+    color: rgb(130, 130, 130);
+}
+
+#sports{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    text-decoration: none solid rgb(130, 130, 130);
+    color: rgb(130, 130, 130);
+}
+
+#entertenment{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    text-decoration: none solid rgb(130, 130, 130);
+    color: rgb(130, 130, 130);
+}
+
+
+#crossword{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    text-decoration: none solid rgb(130, 130, 130);
+    color: rgb(130, 130, 130);
+}
+
+#science{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    text-decoration: none solid rgb(130, 130, 130);
+    color: rgb(130, 130, 130);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #popup{
     display: none;
     display: fixed;
-    top: 0px;
-    left: 20%;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    padding: 10px;
-    background-color:#F5F5F5;
+    height: 150px;
+    width:120px;
+    border-radius:20px ;
+    font-weight:520;
+    letter-spacing: 1px;
+    
+    color:  rgb(0, 65, 155) ;
+    
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 10px 0px 0px 0px ;
+    border: 0px solid red;
+  
+   
 }
 
 #popup div{
-    padding: 10px;
-    background-color:#F5F5F5;
+    padding: 7px 0px 0px 0px;
+    height: auto;
+    border: 0px solid red
+  
+   
 }
 #opinionpop{
     display: none;
     display: fixed;
+    width:120px;
+    border-radius:20px ;
+    font-weight:520;
+    letter-spacing: 1px;
+    color:  rgb(0, 65, 155) ;
     top: 0px;
     left: 20%;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 10px;
+ 
 }
 
 #opinionpop div{
-    padding: 10px;
-    background-color:#F5F5F5;
+    padding: 7px 0px 0px 0px ;
 }
 #businesspop{
     display: none;
     display: fixed;
+    width:120px;
+    border-radius:20px ;
+    font-weight:520;
+    letter-spacing: 1px;
+    color:  rgb(0, 65, 155) ;
     top: 0px;
     left: 20%;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 10px;
-    margin-top: 5px;
 }
 
 #businesspop div{
-    padding: 10px;
+    padding: 7px 0px 0px 0px;
+   
 }
 
 #sportpop{
     display: none;
     display: fixed;
+    width:120px;
+    border-radius:20px ;
+    font-weight:520;
+    letter-spacing: 1px;
+    color:  rgb(0, 65, 155) ;
     top: 0px;
     left: 20%;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 10px;
-    margin-top: 5px;
 }
 
 #sportpop div{
-    padding: 10px;
+    padding: 7px 0px 0px 0px;;
+   
 }
 #entertenmentpop{
     display: none;
     display: fixed;
+    width:120px;
+    border-radius:20px ;
+    font-weight:520;
+    letter-spacing: 1px;
+    color:  rgb(0, 65, 155) ;
     top: 0px;
     left: 20%;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 10px;
-    margin-top: 5px;
 }
 
 #entertenmentpop div{
-    padding: 10px;
+    padding: 7px 0px 0px 0px;
+   
 }
 
 
 #trial{
-    background-color: blue;
-     color: white;
-    padding: 5px;border-radius: 5px;
-}
+        /* Font & Text */
+        font-family: "Fira Sans", sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight:520;
+        letter-spacing: 1.2px;
+        line-height: 29px;
+        text-decoration: underline solid rgb(255, 255, 255);
+        text-align: right;
+        text-indent: 0px;
+        text-transform: uppercase;
+        
+        white-space: normal;
+        word-spacing: 0px;
+    
+        /* Color & Background */
+        background-attachment: scroll;
+        background-color: rgb(0, 65, 155);
+        background-image: none;
+        background-position: 0% 0%;
+        background-repeat: repeat;
+        color: rgb(255, 255, 255);
+    
+        /* Box */
+        height: 35px;
+        width: 88.6094px;
+        border: 1px solid rgb(0, 65, 155);
+        border-top: 1px solid rgb(0, 65, 155);
+        border-right: 1px solid rgb(0, 65, 155);
+        border-bottom: 1px solid rgb(0, 65, 155);
+        border-left: 1px solid rgb(0, 65, 155);
+        margin: 0px;
+        padding: 2px 11px;
+        max-height: none;
+        min-height: 0px;
+        max-width: none;
+        min-width: 0px;
+    
+        /* Positioning */
+        position: static;
+        top: auto;
+        bottom: auto;
+        right: auto;
+        left: auto;
+        float: none;
+        display: block;
+        clear: none;
+        z-index: auto;
+    
+        /* List */
+        list-style-image: none;
+        list-style-type: none;
+        list-style-position: outside;
+    
+        /* Table */
+        border-collapse: separate;
+        border-spacing: 0px 0px;
+        caption-side: top;
+        empty-cells: show;
+        table-layout: auto;
+    
+        /* Miscellaneous */
+        overflow: visible;
+        cursor: pointer;
+        visibility: visible;
+    
+        /* Effects */
+        transform: none;
+        transition: all 0.5s ease-in-out 0s;
+        outline: rgb(255, 255, 255) none 0px;
+        outline-offset: 0px;
+        box-sizing: border-box;
+        resize: none;
+        text-shadow: none;
+        text-overflow: clip;
+        word-wrap: normal;
+        box-shadow: none;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+    
+
 #subscribe{
-    background-color: rgb(255, 255, 58);
-    color: black;
-    padding: 5px;
-    border-radius: 5px;
+	/* Font & Text */
+	font-family: "Fira Sans", sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight:520;
+    letter-spacing: 1.2px;
+	letter-spacing: 1.2px;
+	line-height: 29px;
+	text-decoration: none solid rgb(40, 40, 40);
+	text-align: right;
+	text-indent: 0px;
+	text-transform: capitalize;
+	
+	white-space: normal;
+	word-spacing: 0px;
+
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgb(255, 192, 0);
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: rgb(40, 40, 40);
+
+	/* Box */
+	height: 35px;
+	width: 128.953px;
+	border: 1px solid rgba(0, 0, 0, 0);
+	border-top: 1px solid rgba(0, 0, 0, 0);
+	border-right: 1px solid rgba(0, 0, 0, 0);
+	border-bottom: 1px solid rgba(0, 0, 0, 0);
+	border-left: 1px solid rgba(0, 0, 0, 0);
+	margin: 0px;
+	padding: 2px 11px;
+	max-height: none;
+	min-height: 0px;
+	max-width: none;
+	min-width: 0px;
+
+	/* Positioning */
+	position: static;
+	top: auto;
+	bottom: auto;
+	right: auto;
+	left: auto;
+	float: none;
+	display: block;
+	clear: none;
+	z-index: auto;
+
+	/* List */
+	list-style-image: none;
+	list-style-type: none;
+	list-style-position: outside;
+
+	/* Table */
+	border-collapse: separate;
+	border-spacing: 0px 0px;
+	caption-side: top;
+	empty-cells: show;
+	table-layout: auto;
+
+	/* Miscellaneous */
+	overflow: visible;
+	cursor: pointer;
+	visibility: visible;
+
+	/* Effects */
+	transform: none;
+	transition: all 0.5s ease-in-out 0s;
+	outline: rgb(40, 40, 40) none 0px;
+	outline-offset: 0px;
+	box-sizing: border-box;
+	resize: none;
+	text-shadow: none;
+	text-overflow: clip;
+	word-wrap: normal;
+	box-shadow: none;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 #login{
-    color: blue;
-    padding: 5px;
-    border-radius: 5px;
+	/* Font & Teaxt */
+	font-family: "Fira Sans", sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight:520;
+    letter-spacing: 1.2px;
+	letter-spacing: 1.2px;
+	line-height: 29px;
+	text-decoration: none solid rgb(0, 65, 155);
+	text-align: right;
+	text-indent: 0px;
+	text-transform: uppercase;
+	
+	white-space: normal;
+	word-spacing: 0px;
+
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgb(245, 245, 245);
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: rgb(0, 65, 155);
+
+	/* Box */
+	height: 35px;
+	width: 67.25px;
+	border: 1px solid rgb(0, 65, 155);
+	border-top: 1px solid rgb(0, 65, 155);
+	border-right: 1px solid rgb(0, 65, 155);
+	border-bottom: 1px solid rgb(0, 65, 155);
+	border-left: 1px solid rgb(0, 65, 155);
+	margin: 0px;
+	padding: 2px 11px;
+	max-height: none;
+	min-height: 0px;
+	max-width: none;
+	min-width: 0px;
+
+	/* Positioning */
+	position: relative;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	float: none;
+	display: block;
+	clear: none;
+	z-index: auto;
+
+	/* List */
+	list-style-image: none;
+	list-style-type: none;
+	list-style-position: outside;
+
+	/* Table */
+	border-collapse: separate;
+	border-spacing: 0px 0px;
+	caption-side: top;
+	empty-cells: show;
+	table-layout: auto;
+
+	/* Miscellaneous */
+	overflow: visible;
+	cursor: pointer;
+	visibility: visible;
+
+	/* Effects */
+	transform: none;
+	transition: all 0.5s ease-in-out 0s;
+	outline: rgb(0, 65, 155) none 0px;
+	outline-offset: 0px;
+	box-sizing: border-box;
+	resize: none;
+	text-shadow: none;
+	text-overflow: clip;
+	word-wrap: normal;
+	box-shadow: none;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+
+#subscribe:hover{
+	/* Font & Text */
+	font-family: "Fira Sans", sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight:520;
+    letter-spacing: 1.2px;
+	letter-spacing: 1.2px;
+	line-height: 29px;
+	text-decoration: none solid rgb(40, 40, 40);
+	text-align: right;
+	text-indent: 0px;
+	text-transform: capitalize;
+	
+	white-space: normal;
+	word-spacing: 0px;
+
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color:  rgb(0, 65, 155);;
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: white;
+	/* Box */
+	height: 35px;
+	width: 128.953px;
+	border: 1px solid rgba(0, 0, 0, 0);
+	border-top: 1px solid rgba(0, 0, 0, 0);
+	border-right: 1px solid rgba(0, 0, 0, 0);
+	border-bottom: 1px solid rgba(0, 0, 0, 0);
+	border-left: 1px solid rgba(0, 0, 0, 0);
+	margin: 0px;
+	padding: 2px 11px;
+	max-height: none;
+	min-height: 0px;
+	max-width: none;
+	min-width: 0px;
+
+	/* Positioning */
+	position: static;
+	top: auto;
+	bottom: auto;
+	right: auto;
+	left: auto;
+	float: none;
+	display: block;
+	clear: none;
+	z-index: auto;
+
+	/* List */
+	list-style-image: none;
+	list-style-type: none;
+	list-style-position: outside;
+
+	/* Table */
+	border-collapse: separate;
+	border-spacing: 0px 0px;
+	caption-side: top;
+	empty-cells: show;
+	table-layout: auto;
+
+	/* Miscellaneous */
+	overflow: visible;
+	cursor: pointer;
+	visibility: visible;
+
+	/* Effects */
+	transform: none;
+	transition: all 0.5s ease-in-out 0s;
+	outline: rgb(40, 40, 40) none 0px;
+	outline-offset: 0px;
+	box-sizing: border-box;
+	resize: none;
+	text-shadow: none;
+	text-overflow: clip;
+	word-wrap: normal;
+	box-shadow: none;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+
+#login:hover{
+	/* Font & Teaxt */
+	font-family: "Fira Sans", sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight:520;
+    letter-spacing: 1.2px;
+	letter-spacing: 1.2px;
+	line-height: 29px;
+	text-decoration: none solid rgb(0, 65, 155);
+	text-align: right;
+	text-indent: 0px;
+	text-transform: uppercase;
+	
+	white-space: normal;
+	word-spacing: 0px;
+
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgb(0, 65, 155);
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: white;
+
+	/* Box */
+	height: 35px;
+	width: 67.25px;
+	border: 1px solid rgb(0, 65, 155);
+	border-top: 1px solid rgb(0, 65, 155);
+	border-right: 1px solid rgb(0, 65, 155);
+	border-bottom: 1px solid rgb(0, 65, 155);
+	border-left: 1px solid rgb(0, 65, 155);
+	margin: 0px;
+	padding: 2px 11px;
+	max-height: none;
+	min-height: 0px;
+	max-width: none;
+	min-width: 0px;
+
+	/* Positioning */
+	position: relative;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	float: none;
+	display: block;
+	clear: none;
+	z-index: auto;
+
+	/* List */
+	list-style-image: none;
+	list-style-type: none;
+	list-style-position: outside;
+
+	/* Table */
+	border-collapse: separate;
+	border-spacing: 0px 0px;
+	caption-side: top;
+	empty-cells: show;
+	table-layout: auto;
+
+	/* Miscellaneous */
+	overflow: visible;
+	cursor: pointer;
+	visibility: visible;
+
+	/* Effects */
+	transform: none;
+	transition: all 0.5s ease-in-out 0s;
+	outline: rgb(0, 65, 155) none 0px;
+	outline-offset: 0px;
+	box-sizing: border-box;
+	resize: none;
+	text-shadow: none;
+	text-overflow: clip;
+	word-wrap: normal;
+	box-shadow: none;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
 }
